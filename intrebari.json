@@ -1,0 +1,361 @@
+{
+    "q1": {
+        "intrebare": "Reprezinta forme distincte de economie, economia:",
+        "variante": [
+            "Naturala si de piata",
+            "Naturala, de schimb si de piata",
+            "Naturala si de schimb",
+            "Numai autoconsumul"
+        ],
+        "raspuns": "Naturala si de schimb",
+        "index_raspuns": "3"
+    },
+
+    "q2": {
+        "intrebare": "Economia de piata:",
+        "variante": [
+            "Se bazeaza pe proprietatea comuna asupra mijloacelor de productie",
+            "Raspunde liber la intrebarile: ce?, cat?, cum?, pentru cine? sa produca",
+            "Presupune ca piata sa fie dirijata ",
+            "Preturile administrate sunt predominante pe piata"
+        ],
+        "raspuns": "Raspunde liber la intrebarile: ce?, cat?, cum?, pentru cine? sa produca",
+        "index_raspuns": "2"
+    },
+
+    "q3": {
+        "intrebare": "Care din urmatoarele situatii ilustreaza autoconsumul?",
+        "variante": [
+            "Folosirea unui bun pentru a obtine in schimb un alt bun",
+            "Utilizarea unui imprumut pentru a cumpara un automobil",
+            "Utilizarea rosiilor din productia proprie pentru hrana familiei",
+            "Utilizarea bunurilor cumparate cu venituri proprii"
+        ],
+        "raspuns": "Utilizarea rosiilor din productia proprie pentru hrana familiei",
+        "index_raspuns": "3"
+    },
+
+    "q4": {
+        "intrebare": "",
+        "variante": [
+            "",
+            "",
+            "",
+            ""
+        ],
+        "raspuns": "",
+        "index_raspuns": ""
+    },
+
+    "q5": {
+        "intrebare": "",
+        "variante": [
+            "",
+            "",
+            "",
+            ""
+        ],
+        "raspuns": "",
+        "index_raspuns": ""
+    },
+
+    "q6": {
+        "intrebare": "",
+        "variante": [
+            "",
+            "",
+            "",
+            ""
+        ],
+        "raspuns": "",
+        "index_raspuns": ""
+    },
+
+    "q7": {
+        "intrebare": "",
+        "variante": [
+            "",
+            "",
+            "",
+            ""
+        ],
+        "raspuns": "",
+        "index_raspuns": ""
+    },
+
+    "q8": {
+        "intrebare": "",
+        "variante": [
+            "",
+            "",
+            "",
+            ""
+        ],
+        "raspuns": "",
+        "index_raspuns": ""
+    },
+
+    "q9": {
+        "intrebare": "",
+        "variante": [
+            "",
+            "",
+            "",
+            ""
+        ],
+        "raspuns": "",
+        "index_raspuns": ""
+    },
+
+    "q10": {
+        "intrebare": "",
+        "variante": [
+            "",
+            "",
+            "",
+            ""
+        ],
+        "raspuns": "",
+        "index_raspuns": ""
+    },
+
+    "q11": {
+        "intrebare": "",
+        "variante": [
+            "",
+            "",
+            "",
+            ""
+        ],
+        "raspuns": "",
+        "index_raspuns": ""
+    },
+
+    "q12": {
+        "intrebare": "",
+        "variante": [
+            "",
+            "",
+            "",
+            ""
+        ],
+        "raspuns": "",
+        "index_raspuns": ""
+    },
+
+    "q13": {
+        "intrebare": "",
+        "variante": [
+            "",
+            "",
+            "",
+            ""
+        ],
+        "raspuns": "",
+        "index_raspuns": ""
+    },
+
+    "q14": {
+        "intrebare": "",
+        "variante": [
+            "",
+            "",
+            "",
+            ""
+        ],
+        "raspuns": "",
+        "index_raspuns": ""
+    },
+
+    "q15": {
+        "intrebare": "",
+        "variante": [
+            "",
+            "",
+            "",
+            ""
+        ],
+        "raspuns": "",
+        "index_raspuns": ""
+    },
+
+    "q16": {
+        "intrebare": "",
+        "variante": [
+            "",
+            "",
+            "",
+            ""
+        ],
+        "raspuns": "",
+        "index_raspuns": ""
+    },
+
+    "q17": {
+        "intrebare": "",
+        "variante": [
+            "",
+            "",
+            "",
+            ""
+        ],
+        "raspuns": "",
+        "index_raspuns": ""
+    },
+
+    "q18": {
+        "intrebare": "",
+        "variante": [
+            "",
+            "",
+            "",
+            ""
+        ],
+        "raspuns": "",
+        "index_raspuns": ""
+    },
+
+    "q19": {
+        "intrebare": "",
+        "variante": [
+            "",
+            "",
+            "",
+            ""
+        ],
+        "raspuns": "",
+        "index_raspuns": ""
+    },
+
+    "q20": {
+        "intrebare": "",
+        "variante": [
+            "",
+            "",
+            "",
+            ""
+        ],
+        "raspuns": "",
+        "index_raspuns": ""
+    },
+
+    "q21": {
+        "intrebare": "",
+        "variante": [
+            "",
+            "",
+            "",
+            ""
+        ],
+        "raspuns": "",
+        "index_raspuns": ""
+    },
+
+    "q22": {
+        "intrebare": "",
+        "variante": [
+            "",
+            "",
+            "",
+            ""
+        ],
+        "raspuns": "",
+        "index_raspuns": ""
+    },
+
+    "q23": {
+        "intrebare": "",
+        "variante": [
+            "",
+            "",
+            "",
+            ""
+        ],
+        "raspuns": "",
+        "index_raspuns": ""
+    },
+
+    "q24": {
+        "intrebare": "",
+        "variante": [
+            "",
+            "",
+            "",
+            ""
+        ],
+        "raspuns": "",
+        "index_raspuns": ""
+    },
+
+    "q25": {
+        "intrebare": "",
+        "variante": [
+            "",
+            "",
+            "",
+            ""
+        ],
+        "raspuns": "",
+        "index_raspuns": ""
+    },
+
+    "q26": {
+        "intrebare": "",
+        "variante": [
+            "",
+            "",
+            "",
+            ""
+        ],
+        "raspuns": "",
+        "index_raspuns": ""
+    },
+
+    "q27": {
+        "intrebare": "",
+        "variante": [
+            "",
+            "",
+            "",
+            ""
+        ],
+        "raspuns": "",
+        "index_raspuns": ""
+    },
+
+    "q28": {
+        "intrebare": "",
+        "variante": [
+            "",
+            "",
+            "",
+            ""
+        ],
+        "raspuns": "",
+        "index_raspuns": ""
+    },
+
+    "q29": {
+        "intrebare": "",
+        "variante": [
+            "",
+            "",
+            "",
+            ""
+        ],
+        "raspuns": "",
+        "index_raspuns": ""
+    },
+
+    "q30": {
+        "intrebare": "",
+        "variante": [
+            "",
+            "",
+            "",
+            ""
+        ],
+        "raspuns": "",
+        "index_raspuns": ""
+    }
+}
