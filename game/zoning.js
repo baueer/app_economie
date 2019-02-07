@@ -125,7 +125,6 @@ function gateExempt(pos) {
         gateY = 0;
         if(x>=gateX&&x<=gateX+actorSize*2) {
             if(y<=gateY) {
-                console.log("rocking the sky up");
                 areaIndex-=3;
                 y = canvas.height-borderSize-actorSize;
             }
@@ -137,7 +136,6 @@ function gateExempt(pos) {
         gateY = canvas.height-borderSize;
         if(x>=gateX&&x<=gateX+actorSize*2) {
             if(y==gateY) {
-                console.log("down we go");
                 areaIndex+=3;
                 y = borderSize;
             }
@@ -148,9 +146,7 @@ function gateExempt(pos) {
         gateX = 0;
         gateY = (canvas.height+gateSize)/2-gateSize;
         if(y==gateY||y==gateY+actorSize) {
-            console.log("da");
             if(x<=gateX) {
-                console.log("left behind");
                 areaIndex--;
                 x = canvas.width-borderSize-actorSize;
             }
@@ -162,7 +158,6 @@ function gateExempt(pos) {
         gateY = (canvas.height+gateSize)/2-gateSize;
         if(y==gateY||y==gateY+actorSize) {
             if(x==gateX) {
-                console.log("here we are");
                 areaIndex++;
                 x = borderSize;
             }

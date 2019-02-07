@@ -23,5 +23,6 @@ function render() {
     drawActor();
     drawMap();
     drawGates(areaIndex);
+    drawPickups();
 }
 setInterval(render, 10);
