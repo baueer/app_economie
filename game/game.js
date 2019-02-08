@@ -16,10 +16,14 @@ function drawActor() {
 }
 
 function render() {
+    areaCheck();
+    // basic map rendering
     ctx.fillStyle = "green";
     ctx.fillRect(0, 0, canvas.width, canvas.height);
     ctx.fillStyle = gameZoneBg;
     ctx.fillRect(borderSize, borderSize, canvas.width-borderSize*2, canvas.height-borderSize*2);
+
+    // complex rendering
     drawActor();
     drawMap();
     drawGates(areaIndex);

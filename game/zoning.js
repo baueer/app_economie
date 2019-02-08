@@ -1,3 +1,7 @@
+var areaMapColor = new Array();
+var mapZoneBgActive = "grey";
+var mapZoneBgComplete = "red";
+
 function drawMap() {
     ctx.globalAlpha = 0.5;
 
@@ -17,18 +21,27 @@ function drawMap() {
     let row1 = mapY+5;
     let row2 = row1+areaH+3;
 
-    ctx.fillStyle = "black";
+    for(let i=1; i<=6; i++)
+        if(checkForAreaCompletion(i)) areaMapColor[i]=mapZoneBgComplete;
+            else if(i==areaIndex) areaMapColor[i]=mapZoneBgActive;
+                else areaMapColor[i]= "black"; 
+
+    ctx.fillStyle = areaMapColor[1];
     ctx.fillRect(zeroX, row1, areaW, areaH);
+    ctx.fillStyle = areaMapColor[2];
     ctx.fillRect(zeroX+areaW+3, row1, areaW, areaH);
+    ctx.fillStyle = areaMapColor[3];
     ctx.fillRect(zeroX+areaW+3+areaW+3, row1, areaW, areaH);
-    
+    ctx.fillStyle = areaMapColor[4];
     ctx.fillRect(mapX+5, row2, areaW, areaH);
+    ctx.fillStyle = areaMapColor[5];
     ctx.fillRect(mapX+5+areaW+3, row2, areaW, areaH);
+    ctx.fillStyle = areaMapColor[6];
     ctx.fillRect(mapX+5+areaW+3+areaW+3, row2, areaW, areaH);
 
-    areaCheck();
-    ctx.font = "45px Arial";
-    ctx.fillText(area, 250, 250);
+    ctx.font = "55px Arial";
+    ctx.fillStyle = "black";
+    ctx.fillText(area, canvas.width/2-18, canvas.height/2);
     
     ctx.globalAlpha = 1;
 }
@@ -52,6 +65,17 @@ function drawGates(areaIndex) {
         case 4: drawGate(1); drawGate(4); break;
         case 5: drawGate(1); drawGate(2); drawGate(3); drawGate(4); break;
         case 6: drawGate(1); drawGate(3); break;
+    }
+}
+
+function checkForGateExempt() {
+    switch(areaIndex) {
+        case 1: gateExempt(2); gateExempt(4); break;
+        case 2: gateExempt(2); gateExempt(3); gateExempt(4); break;
+        case 3: gateExempt(2); gateExempt(3); break;
+        case 4: gateExempt(1); gateExempt(4); break;
+        case 5: gateExempt(1); gateExempt(2); gateExempt(3); gateExempt(4); break;
+        case 6: gateExempt(1); gateExempt(3); break;
     }
 }
 
@@ -87,37 +111,6 @@ function drawGate(pos) {
     }
 };
 
-function checkForGateExempt() {
-    if(areaIndex==1) {
-        gateExempt(2);
-        gateExempt(4);
-    }
-    if(areaIndex==2) {
-        gateExempt(2);
-        gateExempt(3);
-        gateExempt(4);
-    }
-    if(areaIndex==3) {
-        gateExempt(2);
-        gateExempt(3);
-    }
-    if(areaIndex==4) {
-        gateExempt(1);
-        gateExempt(4);
-    }
-    if(areaIndex==5) {
-        gateExempt(1);
-        gateExempt(3);
-        gateExempt(4);
-
-        // gameOverCheck();
-    }
-    if(areaIndex==6) {
-        gateExempt(1);
-        gateExempt(3);
-    }
-}
-
 function gateExempt(pos) {
     if(pos == 1) {
         gateSize = 150;
@@ -136,8 +129,13 @@ function gateExempt(pos) {
         gateY = canvas.height-borderSize;
         if(x>=gateX&&x<=gateX+actorSize*2) {
             if(y==gateY) {
-                areaIndex+=3;
-                y = borderSize;
+                if(areaIndex==5) {
+                    console.log('YOU WON');
+                    showResults();
+                } else {
+                    areaIndex+=3;
+                    y = borderSize;
+                }
             }
         }
     }
