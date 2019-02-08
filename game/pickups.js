@@ -31,7 +31,7 @@ var pickups = [
         [6, 420, 270, 1],
         [6, 570, 120, 1]
     ];
-    var pickupsBg = "maroon";
+    var pickupsBg = "#6C6C6C";
     
     function drawPickups() {
         for(let i = 0; i < pickups.length; i++) {
@@ -57,6 +57,10 @@ var pickups = [
             if(x==pickups[i][1] && y==pickups[i][2] && pickups[i][3] && pickups[i][0]==areaIndex) {
                 pickups[i][3]=0;
                 pickupData[areaIndex-1][0]++;
+
+                // INTREBAREA
+                rollQuestion();
+
                 if(correct) pickupData[areaIndex-1][1]++;
                     else pickupData[areaIndex-1][2]++;
             }

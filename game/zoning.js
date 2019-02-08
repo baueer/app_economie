@@ -1,6 +1,6 @@
 var areaMapColor = new Array();
-var mapZoneBgActive = "grey";
-var mapZoneBgComplete = "red";
+var mapZoneBgActive = "#565656";
+var mapZoneBgComplete = "#a6a6a6";
 
 function drawMap() {
     ctx.globalAlpha = 0.5;
@@ -8,7 +8,7 @@ function drawMap() {
     let mapX = 584-borderSize;
     let mapY = 0+borderSize;
     
-    ctx.fillStyle = "green";
+    ctx.fillStyle = "#898989";
     ctx.fillRect(mapX, mapY, 106, 63);
 
     // layout
@@ -38,10 +38,6 @@ function drawMap() {
     ctx.fillRect(mapX+5+areaW+3, row2, areaW, areaH);
     ctx.fillStyle = areaMapColor[6];
     ctx.fillRect(mapX+5+areaW+3+areaW+3, row2, areaW, areaH);
-
-    ctx.font = "55px Arial";
-    ctx.fillStyle = "black";
-    ctx.fillText(area, canvas.width/2-18, canvas.height/2);
     
     ctx.globalAlpha = 1;
 }

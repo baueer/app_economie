@@ -1,25 +1,34 @@
-var data = {
-    "q1": {
-        "intrebare": "Reprezinta forme distincte de economie, economia:",
-        "variante": [
-            "Naturala si de piata",
-            "Naturala, de schimb si de piata",
-            "Naturala si de schimb",
-            "Numai autoconsumul"
-        ],
-        "raspuns": "Naturala si de schimb",
-        "index_raspuns": "3"
-    },
+var data = [
+    ["Reprezinta forme distincte de economie, economia:", 
+        "Naturala si de piata", 
+        "Naturala, de schimb si de piata", 
+        "Naturala si de schimb", 
+        "Numai autoconsumul",
+    3],
+    ["Economia de piata:", 
+        "Se bazeaza pe proprietatea comuna asupra mijloacelor de productie", 
+        "Raspunde liber la intrebarile: ce?, cat?, cum?, pentru cine? sa produca", 
+        "Presupune ca piata sa fie dirijata", 
+        "Preturile administrate sunt predominante pe piata", 
+    2],
+    ["Care din urmatoarele situatii ilustreaza autoconsumul?",
+        "Folosirea unui bun pentru a obtine in schimb un alt bun",
+        "Utilizarea unui imprumut pentru a cumpara un automobil",
+        "Utilizarea rosiilor din productia proprie pentru hrana familiei",
+        "Utilizarea bunurilor cumparate cu venituri proprii",
+    3]
+];
 
-    "q2": {
-        "intrebare": "Economia de piata:",
-        "variante": [
-            "Se bazeaza pe proprietatea comuna asupra mijloacelor de productie",
-            "Raspunde liber la intrebarile: ce?, cat?, cum?, pentru cine? sa produca",
-            "Presupune ca piata sa fie dirijata ",
-            "Preturile administrate sunt predominante pe piata"
-        ],
-        "raspuns": "Raspunde liber la intrebarile: ce?, cat?, cum?, pentru cine? sa produca",
-        "index_raspuns": "2"
-    }
+var question = document.getElementById('question');
+var answer1 = document.getElementById('answer-1-content');
+var answer2 = document.getElementById('answer-2-content');
+var answer3 = document.getElementById('answer-3-content');
+var answer4 = document.getElementById('answer-4-content');
+
+function loadQuestion() {
+    question.innerHTML = data[questionIndex-1][0];
+    answer1.innerHTML = data[questionIndex-1][1];
+    answer2.innerHTML = data[questionIndex-1][2];
+    answer3.innerHTML = data[questionIndex-1][3];
+    answer4.innerHTML = data[questionIndex-1][4];
 }

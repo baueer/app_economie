@@ -2,12 +2,69 @@
 <html>
     <head>
         <title>app_economie</title>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
         <link rel="stylesheet" href="main.css">
     </head>
     <body>
-
         <canvas id="gameZone" width="690" height="540"></canvas>
 
+        <div id="question-tab">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="text-center">
+                            <span id="time">Timp: <span id="time-min">00</span>:<span id="time-sec">00</span></span>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="text-center">
+                            <img src="qmark.png">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="text-center">
+                            <span id="question-span">Intrebarea</span><br>
+                            <span id="question-index"></span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="text-center">
+                    <div id="question">Care din urmatoarele situatii ilustreaza autoconsumul?</div>
+                </div>
+
+                <div class="answer-box" id="answer-1" onClick="selectAnswer(this.id);">
+                    <div class="left-box">
+                        <span class="answer-letter">A</span>
+                    </div>
+                    <div class="right-box" id="answer-1-content">Folosirea unui bun pentru a obtine in schimb un alt bun</div>
+                </div>
+                <div class="answer-box" id="answer-2" onClick="selectAnswer(this.id);" style="margin-top: 8px">
+                    <div class="left-box">
+                        <span class="answer-letter">B</span>
+                    </div>
+                    <div class="right-box" id="answer-2-content">Utilizarea unui imprumut pentru a cumpara un automobil</div>
+                </div>
+                <div class="answer-box" id="answer-3" onClick="selectAnswer(this.id);" style="margin-top: 8px">
+                    <div class="left-box">
+                        <span class="answer-letter">C</span>
+                    </div>
+                    <div class="right-box" id="answer-3-content">Utilizarea rosiilor din productia proprie pentru hrana familiei</div>
+                </div>
+                <div class="answer-box" id="answer-4" onClick="selectAnswer(this.id);" style="margin-top: 8px">
+                    <div class="left-box">
+                        <span class="answer-letter">D</span>
+                    </div>
+                    <div class="right-box" id="answer-4-content">Utilizarea bunurilor cumparate cu venituri proprii</div>
+                </div>
+
+                <a id="next-btn" class="next-btn" onClick="closeQuestion();">CONTINUA</a>
+            </div>
+        </div>
+
+        <script src="./data.js"></script>
+        <script src="./main.js"></script>
         <!-- GAME FILES -->
         <script src="./game/game.js"></script>
         <script src="./game/keystrokes.js"></script>
