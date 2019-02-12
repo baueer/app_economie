@@ -1,1 +1,15 @@
 Q2 - A3 (c) - nu am inteles scrisul
+
+
+
+-------------------------------
+paleta culori initiala: 
+var gameZoneBg = "#f8f8f8";
+ctx.fillStyle = "#acacac"; // actor
+ctx.fillStyle = "#b7b7b7"; // map rendering
+var pickupsBg = "#6C6C6C";
+// zoning
+var mapZoneBgActive = "#565656";
+var mapZoneBgComplete = "#a6a6a6";
+ctx.fillStyle = "#898989"; // map outline
+else areaMapColor[i]= "black"; // map zone color w/o event

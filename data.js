@@ -16,7 +16,19 @@ var data = [
         "Utilizarea unui imprumut pentru a cumpara un automobil",
         "Utilizarea rosiilor din productia proprie pentru hrana familiei",
         "Utilizarea bunurilor cumparate cu venituri proprii",
-    3]
+    3],
+    ["Autonomia economica a producatorilor este:",
+        "bazata pe proprietatea privata asupra mijloacelor de productie",
+        "caracteristica economiei naturale",
+        "bazata pe proprietatea comuna asupra mijloacelor de productie",
+        "denumita si interventia statului in economie",
+    1],
+    ["Reprezinta o trasatura a economiei de piata:",
+        "desfasurarea activitatii economice pe baza de plan",
+        "administrarea preturilor numai de catre stat",
+        "faptul ca bunurile imbraca forma de marfa",
+        "centralizarea activitatii economice",
+    1000]
 ];
 
 var question = document.getElementById('question');

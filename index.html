@@ -9,7 +9,7 @@
     <body>
         <canvas id="gameZone" width="690" height="540"></canvas>
 
-        <div id="question-tab">
+        <div class="tab" id="question-tab">
             <div class="container">
                 <div class="row">
                     <div class="col-md-4">
@@ -31,7 +31,7 @@
                 </div>
                 
                 <div class="text-center">
-                    <div id="question">Care din urmatoarele situatii ilustreaza autoconsumul?</div>
+                    <div class="center-question" id="question">Care din urmatoarele situatii ilustreaza autoconsumul?</div>
                 </div>
 
                 <div class="answer-box" id="answer-1" onClick="selectAnswer(this.id);">
@@ -60,6 +60,21 @@
                 </div>
 
                 <a id="next-btn" class="next-btn" onClick="closeQuestion();">CONTINUA</a>
+            </div>
+        </div>
+
+        <div class="tab" id="results-tab">
+            <div class="row">
+                <div class="col-md-4"></div>
+                <div class="col-md-4">
+                    <div class="text-center">
+                        <img src="qmark.png">
+                    </div>
+                </div>
+                <div class="col-md-4"></div>
+            </div>
+            <div class="text-center">
+                <div class="center-question" id="points-display"></div>
             </div>
         </div>
 

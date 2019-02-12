@@ -51,7 +51,6 @@ var pickups = [
         [0, 0, 0],
         [0, 0, 0]
     ]
-    var correct = true;
     function checkForPickup() {
         for(let i = 0; i < pickups.length; i++) {
             if(x==pickups[i][1] && y==pickups[i][2] && pickups[i][3] && pickups[i][0]==areaIndex) {
@@ -60,9 +59,7 @@ var pickups = [
 
                 // INTREBAREA
                 rollQuestion();
-
-                if(correct) pickupData[areaIndex-1][1]++;
-                    else pickupData[areaIndex-1][2]++;
+                answered++;
             }
         }
     }

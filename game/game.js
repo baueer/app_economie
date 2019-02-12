@@ -1,9 +1,12 @@
 var canvas = document.getElementById("gameZone");
 var ctx = canvas.getContext("2d");
 var borderSize = 20;
-var areaIndex = 1; // game actor first spawned in 'A' area
+var areaIndex = 5; // game actor first spawned in 'A' area
 var area;
 var gameZoneBg = "#f8f8f8";
+var answered = 0;
+var correctAnswered = 0;
+var wrongAnswered = 0;
 
 // game actor assets
 var actorSize = 50;
