@@ -18,17 +18,23 @@ var data = [
         "Utilizarea bunurilor cumparate cu venituri proprii",
     3],
     ["Autonomia economica a producatorilor este:",
-        "bazata pe proprietatea privata asupra mijloacelor de productie",
-        "caracteristica economiei naturale",
-        "bazata pe proprietatea comuna asupra mijloacelor de productie",
-        "denumita si interventia statului in economie",
+        "Bazata pe proprietatea privata asupra mijloacelor de productie",
+        "Caracteristica economiei naturale",
+        "Bazata pe proprietatea comuna asupra mijloacelor de productie",
+        "Denumita si interventia statului in economie",
     1],
     ["Reprezinta o trasatura a economiei de piata:",
-        "desfasurarea activitatii economice pe baza de plan",
-        "administrarea preturilor numai de catre stat",
-        "faptul ca bunurile imbraca forma de marfa",
-        "centralizarea activitatii economice",
-    1000]
+        "Desfasurarea activitatii economice pe baza de plan",
+        "Administrarea preturilor numai de catre stat",
+        "Faptul ca bunurile imbraca forma de marfa",
+        "Centralizarea activitatii economice",
+    1000],
+    ["In economia de piata, satisfacerea nevoilor are loc:",
+        "Numai prin autoconsum",
+        "Prin producerea bunurilor necesare de fiecare consumator",
+        "Prin repartizarea echitabila a bunurilor",
+        "Prin intermediul schimbului",
+    4]
 ];
 
 var question = document.getElementById('question');

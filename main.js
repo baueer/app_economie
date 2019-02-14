@@ -50,6 +50,10 @@ function closeQuestion() {
     selectedAnswer.children[0].classList.remove('active');
     questionIndex++;
 }
+function closeTab() {
+    var tab = document.getElementById('tutorial-tab');
+    tab.style.display = "none";
+}
 function selectAnswer(id) {
     for(let i=1; i<=4; i++) {
         document.getElementById(`answer-`+i).classList.remove('active');
@@ -63,10 +67,21 @@ function selectAnswer(id) {
 
 var resultsTab = document.getElementById('results-tab');
 var pointsTab = document.getElementById('points-display');
+var finishTimeSecondsTab = document.getElementById('time-display-seconds');
+var finishTimeMinutesTab = document.getElementById('time-display-minutes');
+var correctAnsweredTab = document.getElementById('correct-display');
+var wrongAnsweredTab = document.getElementById('wrong-display');
+var answeredTab = document.getElementById('answers-display');
 function showResults() {
     loadResults();
     resultsTab.style.display = "block";
 }
 function loadResults() {
-    pointsTab.innerHTML = `Felicitari, ai obtinut un total de ` + correctAnswered + ` puncte si ai terminat in ` + zeroing(parseInt(totalSeconds / 60)) + `:` + zeroing(totalSeconds % 60) + `.`; 
+    let result = (correctAnswered*0.3) + 1;
+    pointsTab.innerHTML = result; 
+    finishTimeMinutesTab.innerHTML = zeroing(parseInt(totalSeconds / 60));
+    finishTimeSecondsTab.innerHTML = zeroing(totalSeconds % 60);
+    correctAnsweredTab.innerHTML = correctAnswered;
+    wrongAnsweredTab.innerHTML = answered-correctAnswered;
+    answeredTab.innerHTML = answered;
 }

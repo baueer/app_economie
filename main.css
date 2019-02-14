@@ -131,3 +131,17 @@ img {
 #next-btn {
     display: none;
 }
+.tutorial-tab-text {
+    margin-top: 35px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+#tutorial-tab {
+    display: none;
+}
+#tutorial-btn {
+    font-size: 25px;
+}
+#tutorial-btn:hover {
+    cursor: pointer;
+}

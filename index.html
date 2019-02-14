@@ -9,6 +9,34 @@
     <body>
         <canvas id="gameZone" width="690" height="540"></canvas>
 
+        <div class="tab" id="tutorial-tab" style="display: block">
+            <div class="row">
+                <div class="col-md-4">
+
+                </div>
+                <div class="col-md-4">
+                    <div class="text-center">
+                        <img src="qmark.png">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    
+                </div>
+            </div>
+            <div class="text-center">
+                <div class="center-question">
+                    TUTORIAL<br>                    
+                </div>
+                <div class="tutorial-tab-text">
+                    Pe harta, au fost amplasate in 6 zone diferite, un numar de 30 de intrebari.<br>
+                    Foloseste-te de W, A, S, D pentru a te plimba pe harta.<br>
+                    Dupa ce ai colectat toate cele 30 de intrebari, mergi in zona de mijloc, jos<br>
+                    Si treci prin portalul care te va duce in lumea lui Hristos.
+                </div>
+                <a id="tutorial-btn" class="next-btn" onClick="closeTab();">CONTINUA</a>
+            </div>
+        </div>
+
         <div class="tab" id="question-tab">
             <div class="container">
                 <div class="row">
@@ -74,7 +102,12 @@
                 <div class="col-md-4"></div>
             </div>
             <div class="text-center">
-                <div class="center-question" id="points-display"></div>
+                <div class="center-question">Nota: <span id="points-display">0</span>/10
+                <br>Timp finalizare: <span id="time-display-minutes">00</span>:<span id="time-display-seconds">00</span>
+                <br>Raspunsuri corecte: <span id="correct-display"></span>
+                <br>Raspunsuri gresite: <span id="wrong-display"></span>
+                <br>Raspunsuri totale: <span id="answers-display"></span>
+                </div>
             </div>
         </div>
 
