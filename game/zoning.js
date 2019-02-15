@@ -126,7 +126,6 @@ function gateExempt(pos) {
         if(x>=gateX&&x<=gateX+actorSize*2) {
             if(y==gateY) {
                 if(areaIndex==5) {
-                    console.log('YOU WON');
                     showResults();
                 } else {
                     areaIndex+=3;

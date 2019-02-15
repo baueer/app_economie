@@ -2,38 +2,34 @@
 <html>
     <head>
         <title>app_economie</title>
-        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+        <link href="./src/css/bootstrap.min.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="./src/css/main.css">
     </head>
     <body>
         <canvas id="gameZone" width="690" height="540"></canvas>
 
         <div class="tab" id="tutorial-tab" style="display: block">
             <div class="row">
-                <div class="col-md-4">
-
-                </div>
+                <div class="col-md-4"></div>
                 <div class="col-md-4">
                     <div class="text-center">
-                        <img src="qmark.png">
+                        <img src="./src/img/qmark.png">
                     </div>
                 </div>
-                <div class="col-md-4">
-                    
-                </div>
+                <div class="col-md-4"></div>
             </div>
             <div class="text-center">
-                <div class="center-question">
+                <div class="center-question" style="font-size: 26px;">
                     TUTORIAL<br>                    
                 </div>
                 <div class="tutorial-tab-text">
-                    Pe harta, au fost amplasate in 6 zone diferite, un numar de 30 de intrebari.<br>
-                    Foloseste-te de W, A, S, D pentru a te plimba pe harta.<br>
-                    Dupa ce ai colectat toate cele 30 de intrebari, mergi in zona de mijloc, jos<br>
-                    Si treci prin portalul care te va duce in lumea lui Hristos.
+                    Pe harta au fost amplasate 30 de intrebari in 6 zone diferite.<br>
+                    Foloseste-te de W, A, S, D pentru a colecta punctele.<br>
+                    Dupa ce ai colectat toate cele 30 de puncte, mergi in zona in care se afla<br>
+                    linia de sosire si intra in portal pentru a afla scorul.<br><br>
                 </div>
-                <a id="tutorial-btn" class="next-btn" onClick="closeTab();">CONTINUA</a>
+                <a id="tutorial-btn" class="next-btn" onClick="closeTab();" style="font-size: 22px">CONTINUA</a>
             </div>
         </div>
 
@@ -47,7 +43,7 @@
                     </div>
                     <div class="col-md-4">
                         <div class="text-center">
-                            <img src="qmark.png">
+                            <img src="./src/img/qmark.png">
                         </div>
                     </div>
                     <div class="col-md-4">
@@ -91,28 +87,31 @@
             </div>
         </div>
 
-        <div class="tab" id="results-tab">
+        <div class="tab" id="results-tab" style="display: block">
             <div class="row">
                 <div class="col-md-4"></div>
                 <div class="col-md-4">
                     <div class="text-center">
-                        <img src="qmark.png">
+                        <img src="./src/img/qmark.png">
                     </div>
                 </div>
                 <div class="col-md-4"></div>
             </div>
             <div class="text-center">
-                <div class="center-question">Nota: <span id="points-display">0</span>/10
+                <div class="center-question" style="margin-top: 25px">Nota: <span id="points-display">0</span>/10
                 <br>Timp finalizare: <span id="time-display-minutes">00</span>:<span id="time-display-seconds">00</span>
                 <br>Raspunsuri corecte: <span id="correct-display"></span>
                 <br>Raspunsuri gresite: <span id="wrong-display"></span>
                 <br>Raspunsuri totale: <span id="answers-display"></span>
                 </div>
             </div>
+            <div style="margin-top: 80px" class="credits d-flex flex-row-reverse">Realizat de Theodor Luca, clasa a X-a A</div>
+            <div class="credits d-flex flex-row-reverse">Profesor coordonator: Nadia Gratiela Cavescu</div>
+            <div class="credits d-flex flex-row-reverse">Colegiul National Vlaicu Voda, Curtea de Arges, 2019</div>
         </div>
 
-        <script src="./data.js"></script>
-        <script src="./main.js"></script>
+        <script src="./src/data.js"></script>
+        <script src="./src/main.js"></script>
         <!-- GAME FILES -->
         <script src="./game/game.js"></script>
         <script src="./game/keystrokes.js"></script>
